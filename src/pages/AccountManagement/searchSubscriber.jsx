@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { searchSubs } from "../../api/subscriber";
 import { retailersCollection } from "../../api/retailersCollection";
 import { toast, ToastContainer } from "react-toastify";
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 const SearchSubscriber = () => {
   const { t, i18n } = useTranslation();

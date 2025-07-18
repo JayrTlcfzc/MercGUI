@@ -4,7 +4,7 @@ import ConfirmationModal from './confirmationModal';
 import StatusModal from './statusModal';
 import { useTranslation } from 'react-i18next';
 import changePassword  from '../../api/changepassword';
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 export default function ChangePasswordModal({ handleClose = () => {} }) {
 

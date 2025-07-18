@@ -6,7 +6,7 @@ import { FaBuildingColumns } from 'react-icons/fa6';
 import { HandleChange, HandleChangeDigitsOnly, HandleChangeTextOnly, ResetFormData } from '../../components/Validations'; // Import validation and reset functions
 import { useTranslation } from 'react-i18next';
 import { walletToBank, allocateOtpRequest, bankCollection } from '../../api/walletToBank';
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 
 const WalletToBank = () => {

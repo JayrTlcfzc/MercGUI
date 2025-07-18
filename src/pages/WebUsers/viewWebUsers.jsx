@@ -5,7 +5,7 @@ import ViewWebUsersModal from '../../components/Modals/viewWebUsersModal';
 import { useTranslation } from 'react-i18next';
 import { viewWebUser, searchWebUser } from "../../api/webUserSearch";
 import { toast, ToastContainer } from 'react-toastify';
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 const ViewWebUsers = () => {
     const [selectUserBy, setSelectUserBy] = useState("USERNAME");

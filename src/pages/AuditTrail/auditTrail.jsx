@@ -7,7 +7,7 @@ import { HandleChange } from '../../components/Validations';
 import { useTranslation } from 'react-i18next';
 import { GetAuditTrail } from "../../api/getAuditTrails";
 import { toast, ToastContainer } from "react-toastify";
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 import { useNavigate } from 'react-router-dom';
 
 const AuditTrail = () => {

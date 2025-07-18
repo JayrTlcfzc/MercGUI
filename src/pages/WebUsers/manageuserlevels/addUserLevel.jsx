@@ -9,7 +9,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { addUserLevel } from "../../../api/manageUserLevels";
 import { toast, ToastContainer } from "react-toastify";
-import LoadingModal from '../../../components/Modals/loadingModal';
+import LoadingModal from '../../../components/Modals/LoadingModal';
 
 const AddUserLevel = () => {
   const { t, i18n } = useTranslation();

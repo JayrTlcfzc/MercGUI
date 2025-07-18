@@ -10,7 +10,7 @@ import { HandleChange, HandleChangeDigitsOnly, HandleChangeTextOnly } from '../V
 import { useTranslation } from 'react-i18next';
 import {userLevelCol} from "../../api/webuser";
 import { updateWebUser } from '../../api/apiWebUsers';
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 import { useNavigate } from 'react-router-dom';
 
 export default function viewWebUsersModal({ handleClose = () => {}, webUserData = {} }) {

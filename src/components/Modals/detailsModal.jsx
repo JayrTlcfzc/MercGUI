@@ -7,7 +7,7 @@ import Papa from "papaparse";
 import * as XLSX from "xlsx";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 const DetailsModal = ({ batchDetails, fileId, handleClose = () => {} }) => {
   const { t, i18n } = useTranslation();

@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { batchUploadedFiles } from "../../api/batch";
 import { toast, ToastContainer } from "react-toastify";
 import DetailsModal from "../../components/Modals/detailsModal";
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 const BatchUploadedFiles = () => {
   const [searchInput, setSearchInput] = useState("");

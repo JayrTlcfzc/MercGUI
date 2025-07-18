@@ -8,7 +8,7 @@ import { getRolesConfigTable, updateRoles } from '../../api/rolesConfiguration';
 import { toast, ToastContainer } from "react-toastify";
 import ConfirmationModal from '../../components/Modals/confirmationModal';
 import StatusModal from '../../components/Modals/statusModal';
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 const rolesConfiguration = () => {
   const { t, i18n} = useTranslation();

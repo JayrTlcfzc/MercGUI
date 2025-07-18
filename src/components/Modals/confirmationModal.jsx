@@ -3,7 +3,7 @@ import { FaExclamationCircle } from 'react-icons/fa';
 import { toast, ToastContainer } from "react-toastify";
 import { useTranslation } from 'react-i18next';
 import { lockWebUser, unlockWebUser , activeWebUser, deactiveWebUser, resetWebUser } from "../../api/apiWebUsers";
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 import { useNavigate } from 'react-router-dom';
 
 export default function ConfirmationModal({

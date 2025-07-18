@@ -4,7 +4,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import { FaUpload } from 'react-icons/fa6';
 import { useTranslation } from 'react-i18next';
 import { batchPaymentUpload, fileUpload } from '../../api/batch';
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 import { useNavigate } from 'react-router-dom';
 import templateXlsx from '../../assets/Batch-Payment-Template.xlsx?url';
 

@@ -9,7 +9,7 @@ import ConfirmationModal from "../../components/Modals/confirmationModal";
 import DetailsModal from "../../components/Modals/detailsModal";
 import { useTranslation } from 'react-i18next';
 import { batchFilesRequest, batchFilesTracking, batchFilesOtpRequest, batchFilesAction } from "../../api/batch";
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 const BatchFiles = () => {
     const [searchInput, setSearchInput] = useState("");

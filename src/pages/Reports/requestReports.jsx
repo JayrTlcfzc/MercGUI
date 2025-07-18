@@ -4,7 +4,7 @@ import { ClipboardPlus, Search, ArrowDownUp, X, Download} from "lucide-react";
 import RequestReportModal from "../../components/Modals/requestReportModal";
 import { useTranslation } from "react-i18next";
 import { generateReview, generateDataPDF, downloadPDF, downloadCSV } from '../../api/reports';
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 const RequestReports = () => {
     const [searchInput, setSearchInput] = useState("");

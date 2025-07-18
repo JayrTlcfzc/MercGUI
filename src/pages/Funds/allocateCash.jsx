@@ -7,7 +7,7 @@ import { FaMoneyBills } from 'react-icons/fa6';
 import { HandleChange, HandleChangeDigitsOnly, ResetFormData } from '../../components/Validations';
 import { useTranslation } from 'react-i18next';
 import { allocateCash, allocateOtpRequest } from '../../api/allocateCash';
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 const AllocateCash = () => {
   const [isPasswordModalOpen, setPasswordModalOpen] = useState(false);

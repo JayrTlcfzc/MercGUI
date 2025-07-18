@@ -3,7 +3,7 @@ import { Search, ArrowDownUp, X } from "lucide-react";
 import { FaEye } from "react-icons/fa6";
 import { useTranslation } from 'react-i18next';
 import { viewPendingSubs } from "../../api/subscriber";
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 const ViewPendingSubscriber = () => {
   const [searchInput, setSearchInput] = useState("");

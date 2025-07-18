@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import { userLevelCol } from "../../../api/webuser";
 import { editUserLevel, userLevelSearch } from "../../../api/manageUserLevels";
 import { toast, ToastContainer } from "react-toastify";
-import LoadingModal from '../../../components/Modals/loadingModal';
+import LoadingModal from '../../../components/Modals/LoadingModal';
 
 const EditUserLevel = () => {
   const { t, i18n } = useTranslation();

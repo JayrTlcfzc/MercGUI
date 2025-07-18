@@ -5,7 +5,7 @@ import StatusModal from "../../components/Modals/statusModal";
 import { HandleChange, HandleChangeDigitsOnly, HandleChangeTextOnly, ResetFormData, HandleChangeReg } from '../../components/Validations'; 
 import { useTranslation } from 'react-i18next';
 import { accountTypeCol, registerSubscriber, validateMsisdn } from "../../api/subscriber";
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 
 

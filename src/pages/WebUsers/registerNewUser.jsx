@@ -5,7 +5,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import { HandleChange, HandleChangeDigitsOnly, HandleChangeTextOnly, ResetFormData,HandleChangeReg } from '../../components/Validations'; 
 import { useTranslation } from 'react-i18next';
 import { userLevelCol, registerWebUser } from "../../api/webuser";
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 const RegisterNewUser = () => {
   const [levels, setLevels] = useState([]);

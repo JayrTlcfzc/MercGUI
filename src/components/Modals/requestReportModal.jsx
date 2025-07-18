@@ -7,7 +7,7 @@ import { HandleChange, HandleChangeDigitsOnly, HandleChangeTextOnly, ResetFormDa
 import { useTranslation } from 'react-i18next';
 import { transactionTypeCol, requestReport, generateReview } from '../../api/reports';
 import { parse } from 'postcss';
-import LoadingModal from '../../components/Modals/loadingModal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 export default function RequestReportsModal({ handleClose = () => {} }) {
 
