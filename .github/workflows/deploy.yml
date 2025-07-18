@@ -21,15 +21,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run ESLint
-        run: npm run lint
-        continue-on-error: true
+      # - name: Run ESLint
+      #   run: npm run lint
+      #   continue-on-error: true
 
       - name: Write secret to .env file
         run: echo "${{ secrets.ENV_FILE }}" > .env
 
       - name: Build project (Vite)
-        run: npm run build || true
+        run: npm run build
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -42,7 +42,10 @@ jobs:
           password: ${{ secrets.GHCR_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -f ./devops/docker-build/Dockerfile -t ghcr.io/jayrtlcfzc/mercgui:1.0-main .
+        run: |
+          ls -la        # Debug: Check if dist/ is there
+          docker build -f devops/docker-build/Dockerfile -t ghcr.io/jayrtlcfzc/mercgui:1.0-main .
+
 
       - name: Push Docker image to GHCR
         run: docker push ghcr.io/jayrtlcfzc/mercgui:1.0-main
