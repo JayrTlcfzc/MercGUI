@@ -1,4 +1,3 @@
-import React from 'react';
 import loadingSpin from '../../assets/loadingSpin.svg';
 import nufinlogo from '../../assets/nufinlogo.png';
 
