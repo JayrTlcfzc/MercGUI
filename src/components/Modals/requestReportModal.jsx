@@ -7,7 +7,7 @@ import { HandleChange, HandleChangeDigitsOnly, HandleChangeTextOnly, ResetFormDa
 import { useTranslation } from 'react-i18next';
 import { transactionTypeCol, requestReport, generateReview } from '../../api/reports';
 import { parse } from 'postcss';
-import LoadingModal from '../../components/Modals/loadingModal';
+import Loadingmodal from '../../components/Modals/Loadingmodal';
 
 export default function RequestReportsModal({ handleClose = () => {} }) {
 
@@ -139,7 +139,7 @@ export default function RequestReportsModal({ handleClose = () => {} }) {
 
     return (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-            {loading && (<LoadingModal />)}
+            {loading && (<Loadingmodal />)}
 
             <div className="bg-white rounded-lg shadow-lg max-w-xl w-full pb-6 border-2 border-blue-500">
             <div className='flex justify-between flex-row items-center bg-gradient-to-br from-blue-500 to-indigo-600 rounded-t-sx p-2'>

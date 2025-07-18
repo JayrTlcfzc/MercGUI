@@ -4,7 +4,7 @@ import { ClipboardPlus, Search, ArrowDownUp, X, Download} from "lucide-react";
 import RequestReportModal from "../../components/Modals/requestReportModal";
 import { useTranslation } from "react-i18next";
 import { generateReview, generateDataPDF, downloadPDF, downloadCSV } from '../../api/reports';
-import LoadingModal from '../../components/Modals/loadingModal';
+import Loadingmodal from '../../components/Modals/Loadingmodal';
 
 const RequestReports = () => {
     const [searchInput, setSearchInput] = useState("");
@@ -247,7 +247,7 @@ const RequestReports = () => {
 
     return (
         <div className="min-h-screen bg-gray-200 p-4 sm:p-6 md:p-8">
-          {loading && (<LoadingModal />)}
+          {loading && (<Loadingmodal />)}
       
           <div className="max-w-7xl mx-auto bg-white p-4 sm:p-6 rounded-lg shadow-lg">
       

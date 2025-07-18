@@ -8,7 +8,7 @@ import { getRolesConfigTable, updateRoles } from '../../api/rolesConfiguration';
 import { toast, ToastContainer } from "react-toastify";
 import ConfirmationModal from '../../components/Modals/confirmationModal';
 import StatusModal from '../../components/Modals/statusModal';
-import LoadingModal from '../../components/Modals/loadingModal';
+import Loadingmodal from '../../components/Modals/Loadingmodal';
 
 const rolesConfiguration = () => {
   const { t, i18n} = useTranslation();
@@ -269,7 +269,7 @@ const rolesConfiguration = () => {
 
   return (
     <div className="min-h-screen bg-gray-200 p-4 sm:p-6 lg:p-8">
-      {loading && <LoadingModal />}
+      {loading && <Loadingmodal />}
       <ToastContainer />
   
       <div className="p-4 sm:p-6 bg-white shadow-md rounded-lg">
