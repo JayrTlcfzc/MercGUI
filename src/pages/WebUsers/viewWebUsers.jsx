@@ -5,7 +5,7 @@ import ViewWebUsersModal from '../../components/Modals/viewWebUsersModal';
 import { useTranslation } from 'react-i18next';
 import { viewWebUser, searchWebUser } from "../../api/webUserSearch";
 import { toast, ToastContainer } from 'react-toastify';
-import Loadingmodal from '../../components/Modals/Loadingmodal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 const ViewWebUsers = () => {
     const [selectUserBy, setSelectUserBy] = useState("USERNAME");
@@ -146,7 +146,7 @@ const ViewWebUsers = () => {
    
     return (
         <div className="max-h-screen bg-gray-200 p-4 sm:p-8 overflow-x-hidden">
-          {loading && <Loadingmodal />}
+          {loading && <LoadingModal />}
           <ToastContainer />
       
           <div className="max-w-7xl mx-auto bg-white p-4 sm:p-6 rounded-lg shadow-lg">

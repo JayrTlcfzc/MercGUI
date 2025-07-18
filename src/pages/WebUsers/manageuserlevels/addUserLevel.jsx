@@ -9,7 +9,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { addUserLevel } from "../../../api/manageUserLevels";
 import { toast, ToastContainer } from "react-toastify";
-import Loadingmodal from '../../../components/Modals/Loadingmodal';
+import LoadingModal from '../../../components/Modals/LoadingModal';
 
 const AddUserLevel = () => {
   const { t, i18n } = useTranslation();
@@ -85,7 +85,7 @@ const AddUserLevel = () => {
 
   return (
     <div className="w-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      {loading && <Loadingmodal />}
+      {loading && <LoadingModal />}
       <form className="p-6 w-full max-w-4xl">
         {/* Fields Container */}
         <div className="border-2 border-bg-blue-400 bg-white p-4 rounded-2xl">

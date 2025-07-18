@@ -7,7 +7,7 @@ import { HandleChange } from '../../components/Validations';
 import { useTranslation } from 'react-i18next';
 import { GetAuditTrail } from "../../api/getAuditTrails";
 import { toast, ToastContainer } from "react-toastify";
-import Loadingmodal from '../../components/Modals/Loadingmodal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 import { useNavigate } from 'react-router-dom';
 
 const AuditTrail = () => {
@@ -179,7 +179,7 @@ const AuditTrail = () => {
     
     return (
         <div className="bg-gray-200 p-8 cursor-default">
-            {loading && (<Loadingmodal />)}
+            {loading && (<LoadingModal />)}
             <ToastContainer />
             <div className="max-w-7xl mx-auto bg-white p-6 rounded-lg shadow-lg">
 

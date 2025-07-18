@@ -5,7 +5,7 @@ import StatusModal from "../../components/Modals/statusModal";
 import { HandleChange, HandleChangeDigitsOnly, HandleChangeTextOnly, ResetFormData, HandleChangeReg } from '../../components/Validations'; 
 import { useTranslation } from 'react-i18next';
 import { accountTypeCol, registerSubscriber, validateMsisdn } from "../../api/subscriber";
-import Loadingmodal from '../../components/Modals/Loadingmodal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 
 
@@ -165,7 +165,7 @@ const RegisterSubscriber = () => {
 
   return (
     <div className="min-h-screen bg-gray-200 p-8">
-      {loading && (<Loadingmodal />)}
+      {loading && (<LoadingModal />)}
 
       <div className="max-w-7xl mx-auto bg-white p-6 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold mb-6 text-gray-800 flex items-center justify-center">

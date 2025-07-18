@@ -10,7 +10,7 @@ import changePassword from "../api/changepassword";
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useAuth } from "../components/Auth/authContext";
 import ChangePasswordModal from '../components/Modals/changePasswordModal';
-import Loadingmodal from '../components/Modals/Loadingmodal';
+import LoadingModal from '../components/Modals/LoadingModal';
 import { US } from 'country-flag-icons/react/3x2';
 import { FR } from 'country-flag-icons/react/3x2';
 import logo from "../assets/nufinlogo.png";
@@ -112,7 +112,7 @@ const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <ToastContainer />
-      {loading && <Loadingmodal />}
+      {loading && <LoadingModal />}
   
       <div className="flex w-full max-w-6xl mx-4 bg-white rounded-lg shadow-lg overflow-hidden h-[550px]">
         
