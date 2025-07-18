@@ -10,7 +10,7 @@ import changePassword from "../api/changepassword";
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useAuth } from "../components/Auth/authContext";
 import ChangePasswordModal from '../components/Modals/changePasswordModal';
-import LoadingModal from '../components/Modals/loadingModal';
+import LoadingModal from '../components/Modals/LoadingModal';
 import { US } from 'country-flag-icons/react/3x2';
 import { FR } from 'country-flag-icons/react/3x2';
 import logo from "../assets/nufinlogo.png";
