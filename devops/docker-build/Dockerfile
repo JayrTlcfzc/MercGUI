@@ -1,10 +1,12 @@
+# devops/docker-build/Dockerfile
+
 FROM httpd:alpine
 
-# Copy only the contents of dist/ into the target directory
-COPY dist/ /var/www/html/demoapp-merchant/
+# Set working directory
+WORKDIR /usr/local/apache2/htdocs/
 
-# Optional: custom Apache config if you need to change DocumentRoot, enable rewrite, etc.
-# COPY devops/docker-build/httpd.conf /usr/local/apache2/conf/httpd.conf
+# Copy dist from the context (root, since we run docker build from NufinMercGUI/)
+COPY dist/ .
 
 EXPOSE 80
 
