@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { searchSubs } from "../../api/subscriber";
 import { retailersCollection } from "../../api/retailersCollection";
 import { toast, ToastContainer } from "react-toastify";
-import Loadingmodal from '../../components/Modals/Loadingmodal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 const SearchSubscriber = () => {
   const { t, i18n } = useTranslation();
@@ -114,7 +114,7 @@ const SearchSubscriber = () => {
 
   return (
     <div className="min-h-screen bg-gray-200 p-8">
-      {loading && (<Loadingmodal />)}
+      {loading && (<LoadingModal />)}
       <ToastContainer />
 
       {/* Search Bar */}

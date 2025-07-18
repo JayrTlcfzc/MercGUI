@@ -3,7 +3,7 @@ import { FaExclamationCircle } from 'react-icons/fa';
 import { toast, ToastContainer } from "react-toastify";
 import { useTranslation } from 'react-i18next';
 import { lockWebUser, unlockWebUser , activeWebUser, deactiveWebUser, resetWebUser } from "../../api/apiWebUsers";
-import Loadingmodal from '../../components/Modals/Loadingmodal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 import { useNavigate } from 'react-router-dom';
 
 export default function ConfirmationModal({
@@ -120,7 +120,7 @@ export default function ConfirmationModal({
       onKeyDown={handleEnterPress}
       className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50"
     >
-      {loading && (<Loadingmodal />)}
+      {loading && (<LoadingModal />)}
       <ToastContainer />
       <div className="bg-white rounded-lg shadow-lg p-6 w-96 text-center">
         <div className="flex flex-row justify-center items-center">

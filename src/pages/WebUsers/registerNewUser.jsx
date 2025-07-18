@@ -5,7 +5,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import { HandleChange, HandleChangeDigitsOnly, HandleChangeTextOnly, ResetFormData,HandleChangeReg } from '../../components/Validations'; 
 import { useTranslation } from 'react-i18next';
 import { userLevelCol, registerWebUser } from "../../api/webuser";
-import Loadingmodal from '../../components/Modals/Loadingmodal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 const RegisterNewUser = () => {
   const [levels, setLevels] = useState([]);
@@ -110,7 +110,7 @@ const RegisterNewUser = () => {
 
   return (
     <div className="flex items-center justify-center p-4">
-      {loading && (<Loadingmodal />)}
+      {loading && (<LoadingModal />)}
 
       <div className="w-full max-w-4xl">
         {/* Register New User Title outside of the border */}

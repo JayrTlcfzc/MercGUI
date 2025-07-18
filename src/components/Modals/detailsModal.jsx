@@ -7,7 +7,7 @@ import Papa from "papaparse";
 import * as XLSX from "xlsx";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
-import Loadingmodal from '../../components/Modals/Loadingmodal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 const DetailsModal = ({ batchDetails, fileId, handleClose = () => {} }) => {
   const { t, i18n } = useTranslation();
@@ -191,7 +191,7 @@ const DetailsModal = ({ batchDetails, fileId, handleClose = () => {} }) => {
 
   return (
     <div className="fixed -inset-2 flex items-center justify-center z-50 bg-black bg-opacity-50 px-10">
-      {loading && (<Loadingmodal />)}
+      {loading && (<LoadingModal />)}
 
       <div className="bg-white rounded-lg shadow-lg max-w-max w-full pb-6 border-2 border-blue-500">
         <div className="flex justify-between flex-row items-center bg-indigo-600 rounded-t-sx p-2">

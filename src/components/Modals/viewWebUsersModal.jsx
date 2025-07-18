@@ -10,7 +10,7 @@ import { HandleChange, HandleChangeDigitsOnly, HandleChangeTextOnly } from '../V
 import { useTranslation } from 'react-i18next';
 import {userLevelCol} from "../../api/webuser";
 import { updateWebUser } from '../../api/apiWebUsers';
-import Loadingmodal from '../../components/Modals/Loadingmodal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 import { useNavigate } from 'react-router-dom';
 
 export default function viewWebUsersModal({ handleClose = () => {}, webUserData = {} }) {
@@ -171,7 +171,7 @@ export default function viewWebUsersModal({ handleClose = () => {}, webUserData 
   
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 text-xs md:text-sm lg:text-md">
-      {loading && (<Loadingmodal />)}
+      {loading && (<LoadingModal />)}
       <ToastContainer />
       
           <div className="bg-white rounded-lg shadow-lg max-w-full pb-6 border-2 border-blue-500 w-full md:w-[800px] lg:w-[1000px] xl:w-[1200px]">

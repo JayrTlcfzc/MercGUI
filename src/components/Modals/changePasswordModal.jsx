@@ -4,7 +4,7 @@ import ConfirmationModal from './confirmationModal';
 import StatusModal from './statusModal';
 import { useTranslation } from 'react-i18next';
 import changePassword  from '../../api/changepassword';
-import Loadingmodal from '../../components/Modals/Loadingmodal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 
 export default function ChangePasswordModal({ handleClose = () => {} }) {
 
@@ -106,7 +106,7 @@ export default function ChangePasswordModal({ handleClose = () => {} }) {
 
     return (
         <div className="fixed -inset-2 flex items-center justify-center z-50 bg-black bg-opacity-50">
-            {loading && (<Loadingmodal />)}
+            {loading && (<LoadingModal />)}
 
             <div className="bg-white rounded-lg shadow-lg max-w-xl w-full pb-6 border-2 border-blue-500">
                 <div className='flex justify-between flex-row items-center bg-gradient-to-br from-blue-500 to-indigo-600 rounded-t-sx p-2'>

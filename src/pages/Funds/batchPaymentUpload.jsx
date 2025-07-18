@@ -4,7 +4,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import { FaUpload } from 'react-icons/fa6';
 import { useTranslation } from 'react-i18next';
 import { batchPaymentUpload, fileUpload } from '../../api/batch';
-import Loadingmodal from '../../components/Modals/Loadingmodal';
+import LoadingModal from '../../components/Modals/LoadingModal';
 import { useNavigate } from 'react-router-dom';
 import templateXlsx from '../../assets/Batch-Payment-Template.xlsx?url';
 
@@ -72,7 +72,7 @@ function BatchPaymentUpload() {
 
   return (
     <div className="flex flex-col items-center p-4 cursor-default">
-      {loading && <Loadingmodal />}
+      {loading && <LoadingModal />}
 
       {/* Header */}
       <div className="flex flex-row text-center mb-6">
