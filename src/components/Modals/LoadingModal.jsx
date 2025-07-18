@@ -1,7 +1,7 @@
 import loadingSpin from '../../assets/loadingSpin.svg';
 import nufinlogo from '../../assets/nufinlogo.png';
 
-const Loadingmodal = () => {
+const LoadingModal = () => {
   return (
     <div className="fixed -inset-2 flex items-center justify-center z-50 bg-black bg-opacity-50">
       <div className="relative w-32 h-32">
@@ -20,4 +20,4 @@ const Loadingmodal = () => {
   );
 };
 
-export default Loadingmodal;
+export default LoadingModal;
