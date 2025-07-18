@@ -62,7 +62,19 @@ jobs:
             sudo docker stop mercgui || true
             sudo docker rm mercgui || true
             sudo docker run -d --name mercgui -p 8080:80 ghcr.io/jayrtlcfzc/mercgui:1.0-main
+
+            # Ensure destination ownership before overwriting
+            sudo chown -R ec2-user:ec2-user /var/www/html/demoapp-merchant
+
+            # Overwrite existing files from container to EC2 host (forcefully)
+            sudo docker cp mercgui:/var/www/html/demoapp-merchant/. /var/www/html/demoapp-merchant
+
+            # Restore ownership back to Apache
+            sudo chown -R apache:apache /var/www/html/demoapp-merchant
+
+            echo "✔ Files updated and ownership restored to Apache."
           EOF
+
 
 
 
