@@ -9,7 +9,7 @@ import ConfirmationModal from "../../components/Modals/confirmationModal";
 import DetailsModal from "../../components/Modals/detailsModal";
 import { useTranslation } from 'react-i18next';
 import { batchFilesRequest, batchFilesTracking, batchFilesOtpRequest, batchFilesAction } from "../../api/batch";
-import LoadingModal from '../../components/Modals/loadingModal';
+import Loadingmodal from '../../components/Modals/Loadingmodal';
 
 const BatchFiles = () => {
     const [searchInput, setSearchInput] = useState("");
@@ -295,7 +295,7 @@ const BatchFiles = () => {
 
     return (
         <div className="max-h-screen bg-gray-200 p-8">
-            {loading && (<LoadingModal />)}
+            {loading && (<Loadingmodal />)}
 
             <div className="max-w-7xl mx-auto bg-white p-6 rounded-lg shadow-lg">
 

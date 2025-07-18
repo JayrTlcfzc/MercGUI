@@ -6,7 +6,7 @@ import { FaBuildingColumns } from 'react-icons/fa6';
 import { HandleChange, HandleChangeDigitsOnly, HandleChangeTextOnly, ResetFormData } from '../../components/Validations'; // Import validation and reset functions
 import { useTranslation } from 'react-i18next';
 import { walletToBank, allocateOtpRequest, bankCollection } from '../../api/walletToBank';
-import LoadingModal from '../../components/Modals/loadingModal';
+import Loadingmodal from '../../components/Modals/Loadingmodal';
 
 
 const WalletToBank = () => {
@@ -99,7 +99,7 @@ const WalletToBank = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-4">
-      {loading && (<LoadingModal />)}
+      {loading && (<Loadingmodal />)}
       
       <h2 className="text-2xl font-bold mb-8 flex items-center text-center">
         <FaBuildingColumns className="text-blue-500 mr-2" />

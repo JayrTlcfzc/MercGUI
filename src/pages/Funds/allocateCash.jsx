@@ -7,7 +7,7 @@ import { FaMoneyBills } from 'react-icons/fa6';
 import { HandleChange, HandleChangeDigitsOnly, ResetFormData } from '../../components/Validations';
 import { useTranslation } from 'react-i18next';
 import { allocateCash, allocateOtpRequest } from '../../api/allocateCash';
-import LoadingModal from '../../components/Modals/loadingModal';
+import Loadingmodal from '../../components/Modals/Loadingmodal';
 
 const AllocateCash = () => {
   const [isPasswordModalOpen, setPasswordModalOpen] = useState(false);
@@ -80,7 +80,7 @@ const AllocateCash = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-4">
-      {loading && (<LoadingModal />)}
+      {loading && (<Loadingmodal />)}
 
       <h2 className="text-2xl font-bold mb-8 text-gray-800 flex items-center text-center">
         <FaMoneyBills className="text-blue-500 mr-2" />
