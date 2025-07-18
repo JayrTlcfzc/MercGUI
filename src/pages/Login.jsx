@@ -129,7 +129,7 @@ const Login = () => {
             <img src={logo} alt="Logo" className="w-24 object-contain" />
           </div>
           <div className="w-full md:px-6">
-            <h2 className="text-2xl font-extrabold text-center text-blue-800 mb-4">Merchant</h2>
+            <h2 className="text-2xl font-extrabold text-center text-blue-800 mb-4">EMoney Merchant</h2>
             <form className="space-y-4">
               {/* MSISDN */}
               <div>
