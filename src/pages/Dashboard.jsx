@@ -5,7 +5,7 @@ const Dashboard = () => {
   return (
     <div className="flex">
       <div className="flex-1 p-4">
-        <h1>Welcome to the Dashboard</h1>
+        <h1>Welcome to the Dashboard itu</h1>
       </div>
     </div>
   );
