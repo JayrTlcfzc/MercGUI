@@ -33,6 +33,11 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      "import/no-unresolved": "error",
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": [2, { "caseSensitive": true }]
     },
   },
 ]
