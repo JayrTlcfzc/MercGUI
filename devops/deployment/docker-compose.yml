@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  frontend:
+    image: ghcr.io/telcom-live-content-fcz/softpos-merchant-gui:1.0-main
+    container_name: softpos-merchant-gui
+    ports:
+      - "80:80"
+    restart: unless-stopped
+
+
+
