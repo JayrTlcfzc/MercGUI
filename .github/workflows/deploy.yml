@@ -56,10 +56,18 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_rsa -p ${{ secrets.SERVER_PORT }} ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} << 'EOF'
             echo "${{ secrets.GHCR_PAT }}" | sudo docker login ghcr.io -u ${{ secrets.GIT_USERNAME }} --password-stdin
-            cd /var/www/html/demoapp-merchant
+            
+            # Stop Apache to free port 80
+            sudo systemctl stop httpd
+
+            # Pull and restart container
             sudo docker pull ghcr.io/jayrtlcfzc/mercgui:1.0-main
             sudo docker stop mercgui || true
             sudo docker rm mercgui || true
             sudo docker run -d --name mercgui -p 80:80 ghcr.io/jayrtlcfzc/mercgui:1.0-main
+
+            # Optional: Start Apache again after
+            sudo systemctl start httpd
           EOF
+
 
